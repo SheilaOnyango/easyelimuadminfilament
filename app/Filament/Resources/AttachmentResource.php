@@ -13,7 +13,6 @@ class AttachmentResource extends Resource
 {
     protected static ?string $model = Attachment::class;
 
-    // Grouping the resource under "Attachments"
     protected static ?string $navigationGroup = 'Attachments';
 
     public static function query(): Builder
