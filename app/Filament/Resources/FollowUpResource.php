@@ -58,8 +58,8 @@ class FollowUpResource extends Resource
                 \Filament\Forms\Components\Textarea::make('comments')->label('Comments')->required(),
                 \Filament\Forms\Components\TextInput::make('created_by')->label('Created By')->required(),
                 \Filament\Forms\Components\TextInput::make('modified_by')->label('Modified By'),
-                \Filament\Forms\Components\TextInput::make('created_at')->label('Created At')->dateTime()->disabled(),
-                \Filament\Forms\Components\TextInput::make('updated_at')->label('Updated At')->dateTime()->disabled(),
+                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
+                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
             ]);
     }
 
