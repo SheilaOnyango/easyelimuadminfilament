@@ -58,8 +58,8 @@ class FeedbackResource extends Resource
                 \Filament\Forms\Components\TextInput::make('status')->label('Status')->required(),
                 \Filament\Forms\Components\TextInput::make('edited')->label('Edited')->boolean(),
                 \Filament\Forms\Components\TextInput::make('reported')->label('Reported')->boolean(),
-                \Filament\Forms\Components\TextInput::make('created_at')->label('Created At')->dateTime()->disabled(),
-                \Filament\Forms\Components\TextInput::make('updated_at')->label('Updated At')->dateTime()->disabled(),
+                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
+                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
             ]);
     }
 
