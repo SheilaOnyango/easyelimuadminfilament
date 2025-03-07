@@ -68,8 +68,9 @@ class AttachmentResource extends Resource
                 \Filament\Forms\Components\TextInput::make('disk')->label('Disk Storage')->default('public'),
                 \Filament\Forms\Components\TextInput::make('user_id')->label('User ID')->numeric(),
                 \Filament\Forms\Components\TextInput::make('group')->label('Group'),
-                \Filament\Forms\Components\TextInput::make('created_at')->label('Created At')->dateTime(),
-                \Filament\Forms\Components\TextInput::make('updated_at')->label('Updated At')->dateTime(),
+                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
+                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
+                
 
             ]);
     }
