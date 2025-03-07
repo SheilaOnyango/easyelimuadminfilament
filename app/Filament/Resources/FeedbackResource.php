@@ -56,8 +56,8 @@ class FeedbackResource extends Resource
                 \Filament\Forms\Components\TextInput::make('rating')->label('Rating')->required()->numeric(),
                 \Filament\Forms\Components\TextInput::make('message')->label('Message')->required(),
                 \Filament\Forms\Components\TextInput::make('status')->label('Status')->required(),
-                \Filament\Forms\Components\TextInput::make('edited')->label('Edited')->boolean(),
-                \Filament\Forms\Components\TextInput::make('reported')->label('Reported')->boolean(),
+                \Filament\Forms\Components\Checkbox::make('edited')->label('Edited'),
+                \Filament\Forms\Components\Checkbox::make('reported')->label('Reported'),
                 \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
                 \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
             ]);
