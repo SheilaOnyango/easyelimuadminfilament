@@ -52,9 +52,9 @@ class HighschoolCategoryResource extends Resource
                 \Filament\Forms\Components\Textarea::make('description')->label('Description')->required(),
                 \Filament\Forms\Components\TextInput::make('parent_id')->label('Parent ID')->numeric(),
                 \Filament\Forms\Components\TextInput::make('published')->label('Published')->required(),
-                \Filament\Forms\Components\TextInput::make('created_at')->label('Created At')->dateTime()->disabled(),
-                \Filament\Forms\Components\TextInput::make('updated_at')->label('Updated At')->dateTime()->disabled(),
-            ]);
+                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At')->disabled(),
+                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At')->disabled(),
+                ]);
     }
 
     public static function getPages(): array
