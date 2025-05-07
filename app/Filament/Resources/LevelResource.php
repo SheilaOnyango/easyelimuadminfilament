@@ -52,7 +52,15 @@ class LevelResource extends Resource
         return $form
             ->schema([
                 \Filament\Forms\Components\TextInput::make('name')->label('Name')->required(),
-                \Filament\Forms\Components\TextInput::make('type')->label('Type')->required(),
+                \Filament\Forms\Components\Select::make('type')
+                ->label('Type')
+                ->options([
+                    0 => '0',
+                    1 => '1',
+                    2 => '2',
+                    3 => '3',
+                ])
+                ->required(),
                 \Filament\Forms\Components\Textarea::make('description')->label('Description')->required(),
                 \Filament\Forms\Components\Textarea::make('metadescription')->label('Meta Description')->required(),
                 \Filament\Forms\Components\TextInput::make('alias')->label('Alias')->required(),
