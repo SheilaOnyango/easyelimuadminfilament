@@ -52,8 +52,6 @@ class ExamSubscriptionResource extends Resource
                 \Filament\Forms\Components\TextInput::make('subject_exam_id')->label('Subject Exam ID')->numeric()->required(),
                 \Filament\Forms\Components\TextInput::make('payment_id')->label('Payment ID')->numeric()->required(),
                 \Filament\Forms\Components\TextInput::make('user_id')->label('User ID')->numeric()->required(),
-                \Filament\Forms\Components\DateTimePicker::make('start_date')->label('Start Date')->required(),
-                \Filament\Forms\Components\DateTimePicker::make('end_date')->label('End Date')->required(),
             ]);
     }
 
