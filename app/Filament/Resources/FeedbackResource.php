@@ -58,8 +58,6 @@ class FeedbackResource extends Resource
                 \Filament\Forms\Components\TextInput::make('status')->label('Status')->required(),
                 \Filament\Forms\Components\Checkbox::make('edited')->label('Edited'),
                 \Filament\Forms\Components\Checkbox::make('reported')->label('Reported'),
-                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
-                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
             ]);
     }
 

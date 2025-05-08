@@ -65,8 +65,6 @@ class QuestionResource extends Resource
                 \Filament\Forms\Components\TextInput::make('created_by')->label('Created By')->required(),
                 \Filament\Forms\Components\TextInput::make('modified_by')->label('Modified By')->required(),
                 \Filament\Forms\Components\TextInput::make('status')->label('Status')->required(),
-                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
-                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
                 \Filament\Forms\Components\TextInput::make('lesson_id')->label('Lesson ID')->required(),
                 \Filament\Forms\Components\TextInput::make('ai_enabled')->label('AI Enabled')->required(),
                 \Filament\Forms\Components\Textarea::make('ai_before_prompt')->label('AI Before Prompt')->required(),

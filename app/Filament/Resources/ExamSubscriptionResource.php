@@ -54,8 +54,6 @@ class ExamSubscriptionResource extends Resource
                 \Filament\Forms\Components\TextInput::make('user_id')->label('User ID')->numeric()->required(),
                 \Filament\Forms\Components\DateTimePicker::make('start_date')->label('Start Date')->required(),
                 \Filament\Forms\Components\DateTimePicker::make('end_date')->label('End Date')->required(),
-                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
-                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
             ]);
     }
 

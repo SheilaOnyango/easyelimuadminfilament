@@ -83,10 +83,6 @@ class PaymentResource extends Resource
                 \Filament\Forms\Components\Textarea::make('comments')->label('Comments'),
                 \Filament\Forms\Components\TextInput::make('transaction_completed')->label('Transaction Completed')->required(),
                 \Filament\Forms\Components\TextInput::make('mpesa_first_name')->label('Mpesa First Name'),
-                \Filament\Forms\Components\TextInput::make('created_by')->label('Created By')->required(),
-                \Filament\Forms\Components\TextInput::make('modified_by')->label('Modified By')->required(),
-                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
-                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
             ]);
     }
 

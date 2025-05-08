@@ -66,8 +66,6 @@ class PackageResource extends Resource
                 \Filament\Forms\Components\TextInput::make('pages_downloads_limit')->label('Pages Downloads Limit')->numeric()->required(),
                 \Filament\Forms\Components\TextInput::make('questions_limit')->label('Questions Limit')->numeric()->required(),
                 \Filament\Forms\Components\TextInput::make('videos_limit')->label('Videos Limit')->numeric()->required(),
-                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
-                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
             ]);
     }
 

@@ -62,10 +62,6 @@ class SubjectResource extends Resource
                 \Filament\Forms\Components\TextInput::make('icon_name')->label('Icon Name')->required(),
                 \Filament\Forms\Components\TextInput::make('amount')->label('Amount')->required(),
                 \Filament\Forms\Components\TextInput::make('status')->label('Status')->required(),
-                \Filament\Forms\Components\TextInput::make('created_by')->label('Created By')->required(),
-                \Filament\Forms\Components\TextInput::make('modified_by')->label('Modified By')->required(),
-                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
-                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
             ]);
     }
 

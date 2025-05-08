@@ -56,8 +56,6 @@ class HighschoolK2ItemResource extends Resource
                 \Filament\Forms\Components\TextInput::make('published')->label('Published')->required(),
                 \Filament\Forms\Components\Textarea::make('introtext')->label('Intro Text')->required(),
                 \Filament\Forms\Components\Textarea::make('metadesc')->label('Meta Description')->required(),
-                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
-                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
                 \Filament\Forms\Components\TextInput::make('trash')->label('Trash')->required(),
             ]);
     }

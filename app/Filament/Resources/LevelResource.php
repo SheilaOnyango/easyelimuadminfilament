@@ -68,8 +68,6 @@ class LevelResource extends Resource
                 \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
                 \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
                 \Filament\Forms\Components\TextInput::make('image_name')->label('Image Name')->required(),
-                \Filament\Forms\Components\TextInput::make('created_by')->label('Created By')->required(),
-                \Filament\Forms\Components\TextInput::make('modified_by')->label('Modified By')->required(),
                 \Filament\Forms\Components\Select::make('status')
                 ->label('Status')
                 ->options([

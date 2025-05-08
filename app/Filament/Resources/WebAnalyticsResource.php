@@ -82,8 +82,6 @@ class WebAnalyticsResource extends Resource
                 \Filament\Forms\Components\TextInput::make('bounce_rate')->label('Bounce Rate')->numeric()->required(),
                 \Filament\Forms\Components\TextInput::make('nb_actions_per_visit')->label('Actions Per Visit')->numeric()->required(),
                 \Filament\Forms\Components\TextInput::make('avg_time_on_site')->label('Avg Time on Site')->numeric()->required(),
-                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
-                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
             ]);
     }
 

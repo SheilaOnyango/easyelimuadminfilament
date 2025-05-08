@@ -55,8 +55,6 @@ class UserResource extends Resource
                 \Filament\Forms\Components\TextInput::make('password')->label('Password')->password()->required(),
                 \Filament\Forms\Components\TextInput::make('remember_token')->label('Remember Token')->hidden(),
                 \Filament\Forms\Components\Textarea::make('permissions')->label('Permissions')->required(),
-                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
-                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
             ]);
     }
 

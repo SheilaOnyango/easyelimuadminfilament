@@ -52,10 +52,7 @@ class MultipleChoiceResource extends Resource
                 \Filament\Forms\Components\TextInput::make('value')->label('Value')->required(),
                 \Filament\Forms\Components\TextInput::make('is_correct')->label('Is Correct')->required(),
                 \Filament\Forms\Components\TextInput::make('status')->label('Status')->required(),
-                \Filament\Forms\Components\TextInput::make('created_by')->label('Created By')->required(),
-                \Filament\Forms\Components\TextInput::make('modified_by')->label('Modified By')->required(),
-                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
-                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
+                
             ]);
     }
 

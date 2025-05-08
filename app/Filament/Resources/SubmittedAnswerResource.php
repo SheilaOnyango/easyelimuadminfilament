@@ -56,8 +56,6 @@ class SubmittedAnswerResource extends Resource
                 \Filament\Forms\Components\TextInput::make('is_user_correct_answer')->label('Is Correct')->required(),
                 \Filament\Forms\Components\Textarea::make('marking_scheme_answer')->label('Marking Scheme Answer')->required(),
                 \Filament\Forms\Components\Textarea::make('chat_gpt_answer')->label('ChatGPT Answer')->required(),
-                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
-                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
             ]);
     }
 

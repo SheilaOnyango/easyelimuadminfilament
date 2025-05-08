@@ -65,8 +65,6 @@ class LessonResource extends Resource
                 \Filament\Forms\Components\TextInput::make('created_by')->label('Created By')->required(),
                 \Filament\Forms\Components\TextInput::make('modified_by')->label('Modified By')->required(),
                 \Filament\Forms\Components\TextInput::make('sub_topic_id')->label('Sub Topic ID')->required(),
-                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
-                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
             ]);
     }
 

@@ -58,8 +58,6 @@ class FollowUpSubscriptionResource extends Resource
                 \Filament\Forms\Components\TextInput::make('modified_by')->label('Modified By')->numeric(),
                 \Filament\Forms\Components\TextInput::make('phone_number')->label('Phone Number')->required(),
                 \Filament\Forms\Components\TextInput::make('published')->label('Published')->required(),
-                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
-                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
 
             ]);
     }

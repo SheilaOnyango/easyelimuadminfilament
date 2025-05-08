@@ -52,8 +52,6 @@ class QuizResponseResource extends Resource
                 \Filament\Forms\Components\TextInput::make('is_user_correct_answer')->label('Is User Correct Answer')->required(),
                 \Filament\Forms\Components\TextInput::make('user_id')->label('User ID')->required(),
                 \Filament\Forms\Components\TextInput::make('lesson_id')->label('Lesson ID')->required(),
-                \Filament\Forms\Components\DateTimePicker::make('created_at')->label('Created At'),
-                \Filament\Forms\Components\DateTimePicker::make('updated_at')->label('Updated At'),
             ]);
     }
 
