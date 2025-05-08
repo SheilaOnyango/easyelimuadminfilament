@@ -57,10 +57,9 @@ class LevelResource extends Resource
                 \Filament\Forms\Components\Select::make('type')
                 ->label('Type')
                 ->options([
-                    0 => '0',
-                    1 => '1',
-                    2 => '2',
-                    3 => '3',
+                    0 => 'Lesson',
+                    1 => 'Exams',
+                    2 => 'Easy Elimu Exams',
                 ])
                 ->required(),
                 \Filament\Forms\Components\Textarea::make('description')->label('Description')->required(),
@@ -71,7 +70,12 @@ class LevelResource extends Resource
                 \Filament\Forms\Components\TextInput::make('image_name')->label('Image Name')->required(),
                 \Filament\Forms\Components\TextInput::make('created_by')->label('Created By')->required(),
                 \Filament\Forms\Components\TextInput::make('modified_by')->label('Modified By')->required(),
-                \Filament\Forms\Components\TextInput::make('status')->label('Status')->required(),
+                \Filament\Forms\Components\Select::make('status')
+                ->label('Status')
+                ->options([
+                    0 => 'UnPublished',
+                    1 => 'Published',
+                ])
             ]);
     }
 
