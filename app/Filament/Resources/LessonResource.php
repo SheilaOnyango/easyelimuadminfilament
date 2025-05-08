@@ -13,7 +13,8 @@ class LessonResource extends Resource
 {
     protected static ?string $model = Lesson::class;
 
-    protected static ?string $navigationGroup = 'Lessons';
+    protected static ?string $navigationGroup = 'Lesson Management';
+    protected static ?string $navigationIcon = 'heroicon-o-clipboard-document';
 
     public static function query(): Builder
     {

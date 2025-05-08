@@ -14,6 +14,10 @@ class AttachmentResource extends Resource
     protected static ?string $model = Attachment::class;
 
     protected static ?string $navigationGroup = 'Attachments';
+    protected static ?string $navigationIcon = 'heroicon-o-paper-clip';
+
+
+
 
     public static function query(): Builder
     {

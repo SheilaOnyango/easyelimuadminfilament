@@ -13,7 +13,10 @@ class FollowUpSubscriptionResource extends Resource
 {
     protected static ?string $model = FollowUpSubscription::class;
 
-    protected static ?string $navigationGroup = 'Follow Up Subscriptions';
+    protected static ?string $navigationGroup = 'Resources';
+    protected static ?string $navigationIcon = 'heroicon-o-chat-bubble-bottom-center-text';
+
+    
 
     public static function query(): Builder
     {

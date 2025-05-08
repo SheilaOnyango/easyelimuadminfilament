@@ -13,7 +13,9 @@ class PackageResource extends Resource
 {
     protected static ?string $model = Package::class;
 
-    protected static ?string $navigationGroup = 'Packages';
+    protected static ?string $navigationGroup = 'Resources';
+    protected static ?string $navigationIcon = 'heroicon-o-lock-closed';
+
 
     public static function query(): Builder
     {

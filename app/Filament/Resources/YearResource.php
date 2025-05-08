@@ -13,7 +13,7 @@ class YearResource extends Resource
 {
     protected static ?string $model = Year::class;
 
-    protected static ?string $navigationGroup = 'Academic';
+    protected static ?string $navigationGroup = 'Exam Management';
 
     public static function query(): Builder
     {

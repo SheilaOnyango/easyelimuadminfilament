@@ -13,7 +13,8 @@ class PaymentResource extends Resource
 {
     protected static ?string $model = Payment::class;
 
-    protected static ?string $navigationGroup = 'Payments';
+    protected static ?string $navigationGroup = 'Resources';
+    protected static ?string $navigationIcon = 'heroicon-o-credit-card';
 
     public static function query(): Builder
     {

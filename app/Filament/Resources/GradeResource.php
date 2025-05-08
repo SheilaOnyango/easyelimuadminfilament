@@ -13,7 +13,8 @@ class GradeResource extends Resource
 {
     protected static ?string $model = Grade::class;
 
-    protected static ?string $navigationGroup = 'Grades';
+    protected static ?string $navigationGroup = 'Class Management';
+    protected static ?string $navigationIcon = 'heroicon-o-bars-3';
 
     public static function query(): Builder
     {

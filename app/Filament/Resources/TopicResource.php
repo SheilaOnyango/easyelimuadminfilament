@@ -13,7 +13,7 @@ class TopicResource extends Resource
 {
     protected static ?string $model = Topic::class;
 
-    protected static ?string $navigationGroup = 'Topics';
+    protected static ?string $navigationGroup = 'Lesson Management';
 
     public static function query(): Builder
     {

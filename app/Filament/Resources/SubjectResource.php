@@ -13,7 +13,7 @@ class SubjectResource extends Resource
 {
     protected static ?string $model = Subject::class;
 
-    protected static ?string $navigationGroup = 'Subjects';
+    protected static ?string $navigationGroup = 'Lesson Management';
 
     public static function query(): Builder
     {

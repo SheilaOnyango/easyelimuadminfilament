@@ -13,7 +13,8 @@ class ExamSubscriptionResource extends Resource
 {
     protected static ?string $model = ExamSubscription::class;
 
-    protected static ?string $navigationGroup = 'Exam Subscriptions';
+    protected static ?string $navigationGroup = 'Subs';
+    protected static ?string $navigationIcon = 'heroicon-o-user-plus';
 
     public static function query(): Builder
     {

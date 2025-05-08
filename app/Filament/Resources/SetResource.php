@@ -13,7 +13,7 @@ class SetResource extends Resource
 {
     protected static ?string $model = Set::class;
 
-    protected static ?string $navigationGroup = 'Sets';
+    protected static ?string $navigationGroup = 'Exam Management';
 
     public static function query(): Builder
     {

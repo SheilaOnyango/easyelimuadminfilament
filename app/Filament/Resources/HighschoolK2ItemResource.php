@@ -13,7 +13,8 @@ class HighschoolK2ItemResource extends Resource
 {
     protected static ?string $model = HighschoolK2Item::class;
 
-    protected static ?string $navigationGroup = 'Highschool K2 Items';
+    protected static ?string $navigationGroup = 'High School';
+    protected static ?string $navigationIcon = 'heroicon-o-square-2-stack';
 
     public static function query(): Builder
     {

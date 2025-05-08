@@ -13,7 +13,9 @@ class LevelResource extends Resource
 {
     protected static ?string $model = Level::class;
 
-    protected static ?string $navigationGroup = 'Levels';
+    protected static ?string $navigationGroup = 'Class Management';
+    protected static ?string $navigationIcon = 'heroicon-o-square-3-stack-3d';
+
 
     public static function query(): Builder
     {

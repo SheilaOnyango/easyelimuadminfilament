@@ -13,7 +13,8 @@ class HighschoolCategoryResource extends Resource
 {
     protected static ?string $model = HighschoolCategory::class;
 
-    protected static ?string $navigationGroup = 'Highschool Categories';
+    protected static ?string $navigationGroup = 'High School';
+    protected static ?string $navigationIcon = 'heroicon-o-square-2-stack';
 
     public static function query(): Builder
     {

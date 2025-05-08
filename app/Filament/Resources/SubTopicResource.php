@@ -13,7 +13,8 @@ class SubTopicResource extends Resource
 {
     protected static ?string $model = SubTopic::class;
 
-    protected static ?string $navigationGroup = 'Sub Topics';
+    protected static ?string $navigationGroup = 'Lesson Management';
+    protected static ?string $navigationIcon = 'heroicon-o-list-bullet';
 
     public static function query(): Builder
     {

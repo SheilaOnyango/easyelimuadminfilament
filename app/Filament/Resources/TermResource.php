@@ -13,7 +13,7 @@ class TermResource extends Resource
 {
     protected static ?string $model = Term::class;
 
-    protected static ?string $navigationGroup = 'Terms';
+    protected static ?string $navigationGroup = 'Exam Management';
 
     public static function query(): Builder
     {
